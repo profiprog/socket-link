@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "ES2018",
+      "moduleResolution": "node",
+      "module": "commonjs",
+      "declaration": true,
+      "importHelpers": false,
+      "sourceMap": true,
+      "listFiles": false,
+      "strictNullChecks": true,
+      "traceResolution": false,
+      "pretty": true,
+      "lib" : [
+        "ES2018"
+      ],
+      "types" : [
+        "node"
+      ]
+    },
+    "exclude": [
+      "**/node_modules/**",
+      "**/*.spec.ts"
+    ],
+    "compileOnSave": false
+  }
+  
