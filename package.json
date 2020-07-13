@@ -10,6 +10,9 @@
     "build": "tsc -p tsconfig.json",
     "postbuild": "perl -i -pe 's/^(\"use strict\")/#!\\/usr\\/bin\\/env node\\n$1/' socket-link.js && chmod +x socket-link.js",
     "lint": "tslint --project . --format codeFrame",
+    "preversion": "npm run build && npm run lint",
+    "version": "npm publish --access public",
+    "postversion": "git push --follow-tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
